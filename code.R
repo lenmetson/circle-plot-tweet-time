@@ -4,13 +4,9 @@ library(ggplot2)
 # Set working directory 
 setwd()
 
+# Read in data 
+
 tweets_time <- read.csv(tweets_time.csv)
-
-tweets_time$hour <- substring(tweets_time$time, 12,13) # Extract hour from timestamp
-
-hour_summary <- tweets_time %>% # Summarise by hour and count tweets tweeted at that hour 
-  group_by(hour) %>%
-  summarise(n=n())
 
 # Add day and night variable
 
