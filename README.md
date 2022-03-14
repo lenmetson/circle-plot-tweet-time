@@ -1,6 +1,8 @@
 # Replication code for circular bar plot. 
 
 
+![Circular bar plot](time_plot.png)
+
 
 I can't upload the raw data but I have uploaded to code to make the plot as well as the processed data. 
 
