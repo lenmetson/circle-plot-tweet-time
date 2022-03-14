@@ -6,7 +6,7 @@ setwd()
 
 # Read in data 
 
-tweets_time <- read.csv(tweets_time.csv)
+hour_summary <- read.csv(hour_summary.csv)
 
 # Add day and night variable
 
