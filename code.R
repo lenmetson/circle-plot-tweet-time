@@ -34,7 +34,8 @@ hour_summary$perc <- hour_summary$n/sum(hour_summary$n)
 
 # Make plot
 
-plot <- ggplot(hour_summary, aes(x=hour, y=perc, fill = night)) + geom_bar(stat="identity") + coord_polar(start = 0) +
+plot <- ggplot(hour_summary, aes(x=hour, y=perc, fill = night)) + geom_bar(stat="identity") + 
+  coord_polar(start = 0) + # Makes bar plot circular
   scale_fill_manual(values = c("#FFC107", "#1E88E5")) +
   xlab("") + ylab("") +
   labs(title = "When do abortion campaign groups tweet?",
