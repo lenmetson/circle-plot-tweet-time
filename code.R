@@ -1,5 +1,7 @@
-# Set working directory 
+library(tidyverse)
+library(ggplot2)
 
+# Set working directory 
 setwd()
 
 tweets_time <- read.csv(tweets_time.csv)
